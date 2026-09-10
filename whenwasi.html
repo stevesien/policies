@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — WhenWasI</title>
+<meta name="description" content="Privacy policy for the WhenWasI iOS app. Your location history stays on your iPhone and in your own private iCloud account.">
+<link rel="canonical" href="https://stevesien.github.io/policies/whenwasi.html">
+<link rel="alternate" hreflang="en" href="https://stevesien.github.io/policies/whenwasi.html">
+<link rel="alternate" hreflang="ja" href="https://stevesien.github.io/policies/whenwasi-ja.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="dates"><strong>WhenWasI</strong> · Effective 10 September 2026 · Last updated 10 September 2026</p>
+<p class="lang">English · <a href="whenwasi-ja.html">日本語</a> · <a href="./">All policies</a></p>
+
+<h2>Summary</h2>
+<p>WhenWasI records the places you go so you can look them up later. That history is yours. It is stored on your iPhone, and — if you are signed in to iCloud — backed up to your own private iCloud account.</p>
+
+<div class="callout">
+  <strong>The developer of WhenWasI cannot see any of it.</strong> There is no account to create, no server operated by the developer, no analytics, no crash reporting, no advertising, no tracking, and no third-party SDKs.
+</div>
+
+<p>The app contains no networking code other than Apple's CloudKit, which communicates only with your own private iCloud database.</p>
+
+<h2>What the app stores on your device</h2>
+<p>Everything below lives in a database inside the app's own container on your iPhone. iOS deletes that container when you delete the app.</p>
+<table>
+  <thead><tr><th>Data</th><th>What it contains</th><th>Why it exists</th></tr></thead>
+  <tbody>
+    <tr><td>Visits</td><td>Arrival and departure time, coordinate, accuracy, and which place it belongs to</td><td>Your timeline</td></tr>
+    <tr><td>Places</td><td>A name you choose, an optional category, a coordinate, and a visit count</td><td>Grouping repeated visits to the same location</td></tr>
+    <tr><td>Location fixes</td><td>Timestamp, coordinate, accuracy</td><td>Working out where a visit happened</td></tr>
+    <tr><td>Diagnostic events</td><td>Timestamp, a short event type, a short detail string</td><td>Diagnosing problems with recording</td></tr>
+  </tbody>
+</table>
+
+<h2>What leaves your device</h2>
+<p>Only <strong>visits</strong> and <strong>places</strong>, and only into your own private iCloud database (CloudKit container <code>iCloud.com.stevesien.WhenWasI</code>), and only when you are signed in to iCloud on the device.</p>
+<p><strong>Location fixes and diagnostic events never leave your device.</strong> They are deliberately excluded from sync.</p>
+<p>That iCloud data sits in your personal iCloud account and is governed by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. The developer has no access to it and no ability to read, export, or recover it.</p>
+<p>If you are not signed in to iCloud, or you turn iCloud off for this app, the app records and works exactly as before and nothing is uploaded.</p>
+<p>Nothing is sent anywhere else. There is no other server.</p>
+
+<h2>How that iCloud data is protected</h2>
+<p>Apple encrypts private CloudKit data in transit and at rest. To be precise about what that does and does not mean: WhenWasI stores its fields as ordinary CloudKit values rather than end-to-end encrypted ones, so under standard iCloud settings Apple holds the keys and could in principle access the data — for example in response to a valid legal request. If you turn on <a href="https://support.apple.com/en-us/102651">Advanced Data Protection</a> in iOS, your CloudKit data becomes end-to-end encrypted and Apple can no longer read it.</p>
+<p>In either case the developer has no access whatsoever.</p>
+
+<h2>Permissions the app asks for</h2>
+<p><strong>Location — "Always."</strong> The app uses iOS visit monitoring in the background to notice when you arrive somewhere and when you leave. It requests approximately 100-metre accuracy, not precise continuous tracking, and it does not record a continuous trail of your movement. Without "Always" access, recording stops; the app tells you so on the timeline. You can change or revoke this at any time in Settings.</p>
+<p><strong>Photos.</strong> Used only when you open the Assistant or search. The app reads the creation date and the embedded location (geotag) of photos in order to show what you took on a given day, and to let you add a geotagged photo's location to your timeline. Photos are read only — the app never modifies, uploads, or transmits your photos, and thumbnails are displayed on-device only.</p>
+<p><strong>Calendar.</strong> Used only when you open the Assistant or search. The app reads events for the day or search term you ask about, to help you remember where you were. Calendar data is displayed on-device only. It is never stored in the app's database and never uploaded.</p>
+<p><strong>Mail.</strong> The app does <strong>not</strong> read your mail and does not ask for permission to. The "Search Mail" button copies your search text to the clipboard and opens Apple's Mail app so you can paste it into Mail's own search field. That is the whole of the interaction.</p>
+
+<h2>Your control over the data</h2>
+<ul>
+  <li><strong>Delete a single stay</strong> — swipe it away on the timeline.</li>
+  <li><strong>Delete a place</strong> — deletes that place and every visit recorded there.</li>
+  <li><strong>Erase all history</strong> — deletes every visit, place, and location fix on the device, and deletes the entire record zone from your iCloud account. This cannot be undone.</li>
+  <li><strong>Delete the app</strong> — iOS destroys the app's local container. Data previously synced to your iCloud account remains there until you erase it from within the app, or remove it via iOS Settings → your name → iCloud → Manage Account Storage.</li>
+</ul>
+<p>Recording continues after an erase unless you also turn off location access in Settings.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and collects nothing that would identify anyone. No data is transmitted to the developer at any age.</p>
+
+<h2>App Store privacy label</h2>
+<p>The app's App Store privacy label is <strong>Data Not Collected</strong>, because no data is transmitted to the developer or to any third party.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be published at this URL and the "Last updated" date above will change.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:appstore@mui.co.jp">appstore@mui.co.jp</a></p>
+
+<footer>
+  This document describes the behaviour of the WhenWasI iOS app as built from its source repository. It is a factual description of the app's data handling and is not legal advice.
+</footer>
+
+</body>
+</html>

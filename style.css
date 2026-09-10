@@ -1,0 +1,87 @@
+:root {
+  color-scheme: light dark;
+  --fg: #1c1c1e;
+  --bg: #ffffff;
+  --muted: #6b6b70;
+  --rule: #e3e3e6;
+  --accent: #0b6ec9;
+  --tint: #f6f6f8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e9e9ea;
+    --bg: #141416;
+    --muted: #9d9da3;
+    --rule: #2c2c30;
+    --accent: #5aa9f0;
+    --tint: #1d1d20;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  padding: 3rem 1.25rem 5rem;
+  max-width: 46rem;
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Japanese needs more leading and a font stack that resolves on non-Apple
+   platforms, where the App Store reviewer may well be reading this. */
+body:lang(ja) {
+  line-height: 1.85;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+               "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+}
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+h2 { font-size: 1.25rem; margin: 2.75rem 0 .75rem; letter-spacing: -.01em; }
+h1:lang(ja) { font-size: 1.85rem; line-height: 1.4; letter-spacing: 0; }
+h2:lang(ja) { font-size: 1.2rem; letter-spacing: 0; }
+
+.dates { color: var(--muted); font-size: .9rem; margin: 0 0 1.5rem; }
+.lang {
+  margin: 0 0 2.5rem; padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule); font-size: .95rem;
+}
+
+a { color: var(--accent); }
+
+ul { padding-left: 1.25rem; }
+li { margin: .35rem 0; }
+
+table {
+  border-collapse: collapse; width: 100%; margin: 1rem 0;
+  font-size: .95rem; display: block; overflow-x: auto;
+}
+th, td {
+  text-align: left; padding: .6rem .7rem;
+  border-bottom: 1px solid var(--rule); vertical-align: top;
+}
+th { background: var(--tint); font-weight: 600; }
+
+code {
+  background: var(--tint); padding: .12em .4em;
+  border-radius: 4px; font-size: .875em;
+}
+
+.callout {
+  background: var(--tint); border-left: 3px solid var(--accent);
+  padding: .9rem 1.1rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0;
+}
+
+footer {
+  margin-top: 3.5rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--rule); color: var(--muted); font-size: .875rem;
+}
+
+/* Landing page */
+.apps { list-style: none; padding: 0; margin: 2rem 0 0; }
+.apps li { margin: 0 0 1.25rem; padding: 1.1rem 1.25rem; background: var(--tint); border-radius: 10px; }
+.apps .name { font-weight: 600; font-size: 1.05rem; }
+.apps .what { color: var(--muted); font-size: .92rem; margin: .2rem 0 .6rem; }
