@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — WhenWasI</title>
+<meta name="description" content="Help and troubleshooting for the WhenWasI iOS app.">
+<link rel="canonical" href="https://stevesien.github.io/policies/whenwasi-support.html">
+<link rel="alternate" hreflang="en" href="https://stevesien.github.io/policies/whenwasi-support.html">
+<link rel="alternate" hreflang="ja" href="https://stevesien.github.io/policies/whenwasi-support-ja.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>WhenWasI — Support</h1>
+<p class="dates">Location history for iPhone.</p>
+<p class="lang">English · <a href="whenwasi-support-ja.html">日本語</a> · <a href="whenwasi.html">Privacy policy</a> · <a href="./">All pages</a></p>
+
+<div class="callout">
+  Need a person? Email <a href="mailto:appstore@mui.co.jp">appstore@mui.co.jp</a>. Please say which iPhone and iOS version you are on — it usually saves a round trip.
+</div>
+
+<h2>Nothing is being recorded</h2>
+<p>WhenWasI needs location access set to <strong>"Always."</strong> With "While Using," iOS will not wake the app in the background and no visits are recorded at all. The app shows an orange "Recording is stopped" warning at the top of the timeline when this is the case.</p>
+<p>Fix it in <strong>Settings → Privacy &amp; Security → Location Services → WhenWasI → Always</strong>. The warning banner also has a shortcut button.</p>
+
+<h2>A day looks empty</h2>
+<p>The app records <em>stops</em>, not a continuous trail. iOS decides when you have genuinely arrived somewhere and stayed, which means passing through a place, or a short errand, may not produce an entry. A day spent at home may legitimately show one long stay and nothing else.</p>
+<p>Recording also only covers the period since you granted "Always" access. There is no way to recover history from before that.</p>
+
+<h2>The map on a day looks wrong or empty</h2>
+<p>If you drag the day map, it stays where you put it rather than snapping back. A crosshair button appears in the top-right corner — tap it to re-frame the map on that day's stops.</p>
+
+<h2>A place has the wrong name, or no name</h2>
+<p>Unnamed places are shown by their coordinates, because the app never guesses a name it was not given. Tap <strong>Name</strong> on a timeline row, or open the place from the Places tab and tap <strong>Name</strong> / <strong>Rename</strong>.</p>
+<p>A name applies to every past and future visit at that location, not just the one you tapped. If you give two nearby places the same name, the app treats that as a statement that they are one place and merges them.</p>
+
+<h2>The same place appears twice</h2>
+<p>Locations are grouped by proximity, and a large place — a park, a campus, a big building — can be recorded as two clusters that sit slightly apart. Giving both the same name merges them. The app also re-checks for nearby duplicates each time it launches.</p>
+
+<h2>iCloud sync</h2>
+<p>If you are signed in to iCloud, your visits and places are copied to your own private iCloud database so the history survives a lost or replaced phone. Sync is not required — with no iCloud account or no network, the app records and reads exactly as before.</p>
+<p>Sync is not instant. Changes are handed to iOS, which schedules the upload when it sees fit.</p>
+
+<h2>Deleting things</h2>
+<ul>
+  <li><strong>One stay</strong> — swipe it away on the timeline. The place stays, because you were probably there on other days.</li>
+  <li><strong>A place</strong> — from the Places tab. This also deletes every visit ever recorded there.</li>
+  <li><strong>Everything</strong> — the ⋯ menu on the timeline → <strong>Erase All History</strong>. This clears the device and deletes the record zone from iCloud. It cannot be undone.</li>
+</ul>
+<p>Recording continues after an erase unless you also turn off location access.</p>
+
+<h2>Sample data</h2>
+<p>The ⋯ menu can load a few example places and visits so you can see how the app looks before you have history of your own. It is clearly marked with a "sample" tag on each row, it never mixes into your real statistics, and <strong>Erase Sample Data</strong> removes only the samples and leaves everything real untouched.</p>
+
+<h2>The Assistant tab</h2>
+<p>The Assistant helps you jog your memory about a date using what is already on your iPhone — photos taken that day and their geotags, and calendar events. Both need their own permission and are read only when you open the Assistant or search.</p>
+<p>The "Search Mail" button does not read your mail. It copies your search text to the clipboard and opens Apple's Mail app so you can paste it into Mail's own search field — iOS does not allow one app to run a search inside another.</p>
+
+<h2>Battery</h2>
+<p>The app uses iOS visit monitoring, which is the low-power option: it asks roughly 100-metre accuracy and lets the system decide when to report an arrival or departure. It does not keep GPS running or poll for your position.</p>
+
+<h2>Privacy</h2>
+<p>Nothing is sent to the developer, ever. There is no server, no analytics, and no third-party code. See the <a href="whenwasi.html">privacy policy</a> for the detail.</p>
+
+<footer>
+  WhenWasI · <a href="mailto:appstore@mui.co.jp">appstore@mui.co.jp</a>
+</footer>
+
+</body>
+</html>

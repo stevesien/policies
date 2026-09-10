@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Yaoki</title>
+<meta name="description" content="Help and troubleshooting for Yaoki, a step-streak tracker for iPhone and Apple Watch.">
+<link rel="canonical" href="https://stevesien.github.io/policies/yaoki-support.html">
+<link rel="alternate" hreflang="en" href="https://stevesien.github.io/policies/yaoki-support.html">
+<link rel="alternate" hreflang="ja" href="https://stevesien.github.io/policies/yaoki-support-ja.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Yaoki — Support</h1>
+<p class="dates">Step-streak tracker for iPhone and Apple Watch.</p>
+<p class="lang">English · <a href="yaoki-support-ja.html">日本語</a> · <a href="yaoki.html">Privacy policy</a> · <a href="./">All pages</a></p>
+
+<div class="callout">
+  Need a person? Email <a href="mailto:appstore@mui.co.jp">appstore@mui.co.jp</a>. Please say which iPhone and iOS version you are on, and whether an Apple Watch is involved.
+</div>
+
+<h2>No steps are showing</h2>
+<p>Yaoki reads your steps from Apple Health, so it needs permission. Check <strong>Health app → Sharing → Apps → Yaoki</strong> and make sure Steps is on.</p>
+<p>Health permissions are unusual: iOS never tells an app that it was denied, only that there is no data. So a permission problem and a genuinely empty day look identical from inside Yaoki. If you are sure you have walked, the permission screen is the first place to look.</p>
+<p>On a new iPhone, Health may also still be syncing its history from iCloud. Give it a while and use <strong>Recalculate from Health</strong> in Settings.</p>
+
+<h2>My streak is wrong</h2>
+<p>Tap <strong>Recalculate from Health</strong> in Settings. This throws away the running total and re-counts every day from your Health data, which fixes a streak that drifted because Health back-filled steps after the fact — common if you also wear a watch, or if a day's steps arrived late.</p>
+<p>If it is still wrong, check these in order:</p>
+<ul>
+  <li><strong>Daily goal</strong> — a day only extends the streak if it reaches the goal.</li>
+  <li><strong>Days off</strong> — weekdays marked as days off never break a streak, which can make a streak longer than you expect.</li>
+  <li><strong>Day edits</strong> — you can mark an individual day as a rest day, as counted, or as a break. Those overrides win over the step data. <strong>Clear all day edits</strong> in Settings removes all of them at once.</li>
+</ul>
+
+<h2>The widget is out of date</h2>
+<p>Widgets do not run continuously. iOS gives every widget a limited refresh budget and decides when to spend it, so a widget can lag the app by a while — this is a system limit, not something an app can override.</p>
+<p>Opening Yaoki always refreshes it. For the widget to show today's steps without opening the app, <strong>Motion &amp; Fitness</strong> must be enabled in <strong>Settings → Privacy &amp; Security → Motion &amp; Fitness</strong>.</p>
+
+<h2>The Apple Watch app or complication is wrong</h2>
+<p>The watch does not read Health itself. The iPhone sends it two numbers — your daily goal and your current streak — so the watch is only as current as the last time the two were in range of each other.</p>
+<p>Open Yaoki on the iPhone with the watch nearby to push a fresh copy. Complications also refresh on their own schedule, set by watchOS.</p>
+
+<h2>The reminder never arrives</h2>
+<p>The reminder is <strong>Nudge me if a run is at risk</strong> in Settings, and it needs notification permission: <strong>Settings → Notifications → Yaoki</strong>.</p>
+<p>It is deliberately quiet. It only fires when a streak you already have is genuinely at risk — not every day, and not when you have already hit the goal or the day is a day off.</p>
+
+<h2>I got a new iPhone</h2>
+<p>Your settings — daily goal, days off, any manual streak number, and your day edits — come back automatically through your iCloud account.</p>
+<p>Your step history is not copied by Yaoki, because Health already holds it. Once Health has finished restoring on the new phone, <strong>Recalculate from Health</strong> rebuilds the streak from it.</p>
+
+<h2>Does it drain the battery?</h2>
+<p>No. Yaoki does not track you continuously or run in the background. It reads totals from Health when you open it, and the widget uses the device's own pedometer, which is a dedicated low-power chip.</p>
+
+<h2>Privacy</h2>
+<p>Yaoki has no servers, no analytics, and no third-party code. Your health data is never sent anywhere — not to the developer, not to anyone. See the <a href="yaoki.html">privacy policy</a> for the detail.</p>
+
+<footer>
+  Yaoki · 八起き · <a href="mailto:appstore@mui.co.jp">appstore@mui.co.jp</a>
+</footer>
+
+</body>
+</html>
